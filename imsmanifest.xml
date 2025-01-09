@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<manifest identifier="Course_ID1" version="1.3"
+	  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+	  xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+	  xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+	  xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+	  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+						  http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+						  http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+						  http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+						  http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>2004 4th Edition</schemaversion>
+		<adlcp:location>metadata.xml</adlcp:location>
+	</metadata>
+	
+	
+	<organizations default="Course_ID1_ORG">
+		<organization identifier="Course_ID1_ORG">
+			<!--****** Title ******-->
+			<title>Captivate E-Learning Course</title>
+			<item identifier="Course_ID1_SCO" identifierref="Course_ID1_SCO_RES" isvisible="true">
+				<!--****** Title ******-->
+				<title>index_SCO_Title</title>
+				<metadata>
+					<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM lom.xsd">
+						<general>
+							<description>
+				  				<string language="en-us">Course Description.</string> 
+				  			</description>
+						</general>
+					</lom>
+				</metadata>
+				<imsss:sequencing>
+				<imsss:objectives>
+					        <imsss:primaryObjective objectiveID="Quiz_202511153529"/>
+				</imsss:objectives>
+					<imsss:deliveryControls tracked="true" completionSetByContent="true" objectiveSetByContent="true"/>
+				</imsss:sequencing>
+			</item>
+			<metadata>
+				<adlcp:location>metadata.xml</adlcp:location>
+			</metadata>			
+	<imsss:sequencing>
+				<imsss:controlMode choice="true" flow="true"/>
+                <imsss:rollupRules>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition condition="satisfied"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="satisfied"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition operator="not" condition="satisfied"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="notSatisfied"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition condition="completed"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="completed"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition operator="not" condition="completed"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="incomplete"/>
+                    </imsss:rollupRule>
+                </imsss:rollupRules>
+			</imsss:sequencing>
+		</organization>
+	</organizations>
+	<resources>
+		<resource adlcp:scormType="sco" identifier="Course_ID1_SCO_RES" type="webcontent" href="index.html">
+			<metadata>
+				<adlcp:location>metadata.xml</adlcp:location>
+			</metadata>
+			
+			<file href="assets/htmlimages/Answer_checkbox_correct.png"></file>
+			<file href="index.html"></file>
+			<file href="scormdriver.js"/>
+			<file href="browsersniff.js"/>
+			
+<file href="assets/htmlimages/Answer_checkbox_incorrect.png"/> 
+<file href="assets/htmlimages/Answer_radio_correct.png"/> 
+<file href="assets/htmlimages/Answer_radio_incorrect.png"/> 
+<file href="assets/htmlimages/Download_certificate_icon.svg"/> 
+<file href="assets/htmlimages/img_trans.gif"/> 
+<file href="assets/js/project.js"/> 
+<file href="dist/main.chunk.js"/> 
+<file href="dist/main.chunk.js.br"/> 
+<file href="dist/runtime-main.bundle.js"/> 
+<file href="dist/vendors-main.chunk.js"/> 
+<file href="dist/vendors-main.chunk.js.LICENSE.txt"/> 
+<file href="dist/vendors-main.chunk.js.br"/> 
+<file href="dr/010800.png"/> 
+<file href="dr/010803.png"/> 
+<file href="dr/010808.jpg"/> 
+<file href="dr/01098.png"/> 
+<file href="dr/01165.png"/> 
+<file href="dr/01232.png"/> 
+<file href="dr/01299.png"/> 
+<file href="dr/016251.png"/> 
+<file href="dr/016254.png"/> 
+<file href="dr/016360.png"/> 
+<file href="dr/016401.svg"/> 
+<file href="dr/016582.svg"/> 
+<file href="dr/017600.png"/> 
+<file href="dr/018079.jpg"/> 
+<file href="dr/018081.png"/> 
+<file href="dr/018084.jpg"/> 
+<file href="dr/018090.svg"/> 
+<file href="dr/018975.svg"/> 
+<file href="dr/019595.png"/> 
+<file href="dr/019719.png"/> 
+<file href="dr/019835.svg"/> 
+<file href="dr/019857.svg"/> 
+<file href="dr/019882.jpg"/> 
+<file href="dr/019884.jpeg"/> 
+<file href="dr/01997.jpg"/> 
+<file href="dr/020261.jpg"/> 
+<file href="dr/020263.jpg"/> 
+<file href="dr/020584.png"/> 
+<file href="dr/020691.png"/> 
+<file href="dr/020797.png"/> 
+<file href="dr/020906.png"/> 
+<file href="dr/020909.png"/> 
+<file href="dr/021446.svg"/> 
+<file href="dr/021459.svg"/> 
+<file href="dr/021488.png"/> 
+<file href="dr/021612.png"/> 
+<file href="dr/021736.png"/> 
+<file href="dr/021860.png"/> 
+<file href="dr/021984.png"/> 
+<file href="dr/022108.png"/> 
+<file href="dr/022224.svg"/> 
+<file href="dr/022530.jpg"/> 
+<file href="dr/022534.jpg"/> 
+<file href="dr/022538.jpg"/> 
+<file href="dr/022540.png"/> 
+<file href="dr/022636.jpg"/> 
+<file href="dr/022638.png"/> 
+<file href="dr/023701.png"/> 
+<file href="dr/023825.png"/> 
+<file href="dr/023941.svg"/> 
+<file href="dr/024090.png"/> 
+<file href="dr/024093.svg"/> 
+<file href="dr/024096.svg"/> 
+<file href="dr/024099.jpg"/> 
+<file href="dr/024101.jpg"/> 
+<file href="dr/024103.svg"/> 
+<file href="dr/025483.png"/> 
+<file href="dr/025703.png"/> 
+<file href="dr/025770.png"/> 
+<file href="dr/025837.png"/> 
+<file href="dr/025898.png"/> 
+<file href="dr/025900.png"/> 
+<file href="dr/025904.jpg"/> 
+<file href="dr/026658.jpg"/> 
+<file href="dr/026660.png"/> 
+<file href="dr/026663.jpg"/> 
+<file href="dr/026665.jpg"/> 
+<file href="dr/026668.jpg"/> 
+<file href="dr/026893.png"/> 
+<file href="dr/027599.png"/> 
+<file href="dr/02830.png"/> 
+<file href="dr/028973.png"/> 
+<file href="dr/030299.png"/> 
+<file href="dr/030302.jpg"/> 
+<file href="dr/030423.png"/> 
+<file href="dr/037126.png"/> 
+<file href="dr/038545.png"/> 
+<file href="dr/039839.jpg"/> 
+<file href="dr/039841.jpg"/> 
+<file href="dr/041134.jpg"/> 
+<file href="dr/041136.jpg"/> 
+<file href="dr/043392.png"/> 
+<file href="dr/047410.png"/> 
+<file href="dr/04759.png"/> 
+<file href="dr/047828.png"/> 
+<file href="dr/04800.svg"/> 
+<file href="dr/048199.png"/> 
+<file href="dr/0485.svg"/> 
+<file href="dr/048554.jpg"/> 
+<file href="dr/049023.png"/> 
+<file href="dr/049238.svg"/> 
+<file href="dr/050183.jpg"/> 
+<file href="dr/052231.svg"/> 
+<file href="dr/053300.png"/> 
+<file href="dr/053313.png"/> 
+<file href="dr/055206.jpeg"/> 
+<file href="dr/055212.png"/> 
+<file href="dr/055826.png"/> 
+<file href="dr/055893.png"/> 
+<file href="dr/055960.png"/> 
+<file href="dr/056019.png"/> 
+<file href="dr/056021.png"/> 
+<file href="dr/056023.png"/> 
+<file href="dr/08639.png"/> 
+<file href="dr/08642.png"/> 
+<file href="dr/08791.svg"/> 
+<file href="goodbye.html"/> 
+<file href="index.html"/> 
+<file href="pools/243/243.js"/> 
+<file href="project.txt"/> 
+<file href="vr/Vi8737.mp4"/> 
+<file href="Utilities.js"/> 
+            </resource>
+	</resources>
+</manifest>
